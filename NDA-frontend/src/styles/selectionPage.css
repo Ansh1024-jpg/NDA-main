@@ -15,6 +15,14 @@ body.dark .chatgpt-header {
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6) !important;
 }
 
+/* Allow scrolling on selection page */
+.selection-page-container {
+    height: auto !important;
+    min-height: 100vh;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+
 .selection-content {
     display: flex;
     align-items: flex-start;
@@ -152,4 +160,54 @@ body.dark .tile h3 {
     transform: none;
     background: rgba(255, 255, 255, 0.01);
     border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .selection-content {
+        padding: 40px 16px 20px;
+        align-items: flex-start;
+        height: auto;
+        min-height: calc(100vh - 80px);
+    }
+
+    .welcome-message {
+        margin-bottom: 40px;
+    }
+
+    .welcome-message .instruction {
+        margin-top: 24px;
+        font-size: 1rem;
+    }
+
+    .tiles-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .tile {
+        width: 100%;
+        max-width: 340px;
+        height: 160px;
+        padding: 24px;
+    }
+
+    .tile h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium Screens (Laptops) */
+@media (min-width: 769px) and (max-width: 1366px) {
+    .tile {
+        width: 200px;
+        height: 170px;
+        padding: 24px;
+    }
+
+    .tile h3 {
+        font-size: 1.2rem;
+    }
 }

@@ -43,7 +43,7 @@ export default function SelectionPage({ darkMode, setDarkMode }) {
     };
 
     return (
-        <div className="chatgpt-container">
+        <div className="chatgpt-container selection-page-container">
             <StarBackground />
             {/* Navbar reused from ChatPage/SummaryPage */}
             <header className="chatgpt-header">

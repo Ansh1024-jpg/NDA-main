@@ -156,7 +156,7 @@ button:active,
   pointer-events: none;
   overflow: hidden;
   /* Light Mode Home Background */
-  background: #dbeafe;
+  background: linear-gradient(to top, #93c5fd 0%, #e0f2fe 100%);
 }
 
 /* Dark Mode Home Background Override */
